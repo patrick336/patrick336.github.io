@@ -6,11 +6,11 @@ var board = {
     }, 
     element: $('.column-container')
 };
+
 $('.create-column').click(function (e) {
     e.preventDefault();
-    $('#myModal').css({
-        'display': 'block'
-    });
+
+    $('#myModal').css({ 'display': 'block'});
     
     var input = $('#name');
     var form = $('#form');

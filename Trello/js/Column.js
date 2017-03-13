@@ -1,10 +1,13 @@
+// KLASA KOLUMN
 function Column(id, name) {
+
     var self = this;
     this.id = id;
     this.name = name || 'Nie podano nazwy';
     this.element = createColumn();
 
     function createColumn() {
+        // Tworzenie kodu HTML dla widoku
         var column = $('<div class="column"></div>');
         var columnTitle = $('<h2 class="column-title">' + self.name + '</h2>');
         var columnCardList = $('<ul class="card-list"></ul>');
@@ -13,9 +16,8 @@ function Column(id, name) {
         var columnAddCard = $('<button class="btn column-add-card block-center">Dodaj kartę</button>');
 
         columnChangeName.click(function (e) {
-            $('#myModal').css({
-                'display': 'block'
-            });
+            
+            $('#myModal').css({ 'display': 'block' });
             getFormData(wyslij_formularz);
             function wyslij_formularz(e,field) {
                     
@@ -47,6 +49,7 @@ function Column(id, name) {
         columnDelete.click(function () {
             self.deleteColumn();
         });
+
         columnAddCard.click(function (event) {
             
             event.preventDefault();
@@ -80,7 +83,13 @@ function Column(id, name) {
                 });
             });
         });
-        column.append(columnTitle).append(columnChangeName).append(columnDelete).append(columnAddCard).append(columnCardList);
+        // Tworzenie widoku 
+        column.append(columnTitle)
+              .append(columnChangeName)
+              .append(columnDelete)
+              .append(columnAddCard)
+              .append(columnCardList);
+        
         return column;
     }
 }

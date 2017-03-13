@@ -1,5 +1,0 @@
-$(function () {
-	
-	
-	
-}); // End ready

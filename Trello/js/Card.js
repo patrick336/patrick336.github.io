@@ -1,5 +1,6 @@
 // KLASA KANBAN CARD
 function Card(id, name, kanban_id) {
+   
     var self = this;
     this.id = id;
     this.name = name || 'Nie podano nazwy';
@@ -7,26 +8,30 @@ function Card(id, name, kanban_id) {
     this.element = createCard();
 
     function createCard() {
+
+        //Tworzenie kodu HTML dla widoku
         var card = $('<li class="card"></li>');
         var btnGroups = $('<span class="btn-group"></span');
         var cardChangeName = $('<button class="btn column-add-card"><i class="fa fa-pencil"></i></button>');
         var cardDeleteBtn = $('<button class="btn column-add-card"><i class="fa fa-trash-o"></i></button>');
         var cardDescription = $('<p class="card-description"></p>');
+       
+       // Obsługa przycisku - zmiana nazwy
         cardChangeName.click(function (e) {
             e.preventDefault();
             
-            $('#myModal').css({
-                'display': 'block'
-            });
+            // Pojawienie się okna do wprowadzena nowej nazwy
+            $('#myModal').css({ 'display': 'block' });
             
             var input = $('#name');
             var form = $('#form');
             
-            
-            
+
             form.on('submit', function (e) {
+
                 e.preventDefault();
                 var field = input.val();
+
                 if(field.length == 0 ) field='Nie podano nazwy';
                 
                 $.ajax({
@@ -41,9 +46,7 @@ function Card(id, name, kanban_id) {
                         form.off('submit');
                         cardDescription.text(field);
                         input.val('');
-                        $('#myModal').css({
-                            'display': 'none'
-                        });
+                        $('#myModal').css({ 'display': 'none' });
                     }, 
                     error: function (response) {
                         alert('Wystąpił błąd połączenia z serwerem.');
@@ -51,9 +54,13 @@ function Card(id, name, kanban_id) {
                 });
             });
         });
+
+        //  Usuwanie karty
         cardDeleteBtn.click(function () {
             self.removeCard();
         });
+
+        // Tworzenie widoku
         btnGroups.append(cardChangeName).append(cardDeleteBtn);
         card.append(btnGroups);
         cardDescription.text(self.name);
@@ -61,9 +68,13 @@ function Card(id, name, kanban_id) {
         return card;
     }
 }
+
+// Usuwamy kartę z bazy
 Card.prototype = {
+
     removeCard: function () {
         var self = this;
+
         $.ajax({
             url: baseUrl + '/card/' + self.id, 
             method: 'DELETE', 
