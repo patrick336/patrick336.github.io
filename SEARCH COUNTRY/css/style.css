@@ -1,0 +1,20 @@
+body {
+    max-width: 400px;
+    width: 100%;
+    margin:  50px auto 0;
+    background: #777;
+
+}
+td {
+    font-weight: 800;
+}
+flag-icon-background {
+    height: 100px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.margin {
+   	margin: 10px 0;
+}

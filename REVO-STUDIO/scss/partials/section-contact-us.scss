@@ -1,0 +1,119 @@
+//CONTACT US
+.contact-us {
+	
+	background: #000 url($image-contact-form) center/cover no-repeat fixed;
+	position: relative; 
+	color: $white; 
+	overflow: hidden; 
+	min-height: 300px;
+ 
+	h5 {  
+		margin: 0 ;
+	}
+	p {  
+		font-size: 11px;
+	}
+	.box { 
+		height: 100px; 
+	}
+	i.fa  {
+		position: absolute ;
+		left: 10px; 
+		top: 0 ;
+		text-align: center; 
+		border: 1px solid $white;
+		color: $white;
+		@include icon-ctrl (60px,150%);
+		@include borderRadius (100%);
+	}
+}
+.add-padding {
+	padding: 50px 0;
+}
+.active  {
+	background: $light-cyan; 
+	color: $white; 
+} 
+.active-border {  
+	border-color: $light-cyan; 
+}
+.field-wrap {  
+	margin-bottom: 20px;
+}
+.input-field,
+.textarea-field {  
+	border: 2px solid $white; 
+	background: inherit; 
+	font-family: $Ubuntu;
+	font-weight: 900; 
+	outline: none; 
+	color: $white; 
+	width: 95%; 
+	max-width: 700px; 
+	padding-left: 20px; 
+	display: block; 
+	margin: 0 auto; 
+	font-size: 12px;
+	
+	&:focus {
+		border: 1px solid $orange ;
+		background: $orange-with-opacity; 	
+	}
+	&:valid {
+	  background: $green-with-opacity; 
+	  border: 1px solid $green; 
+	}
+}//input/ textarea
+.input-field { 
+	height: 40px; 
+} 
+.textarea-field {  
+	height: 159px; 
+	padding: 20px;
+} 
+.textarea-field::-webkit-input-placeholder,
+.input-field::-webkit-input-placeholder  { 
+	color: $white; 
+}
+.textarea-field:focus::-webkit-input-placeholder,
+.input-field:focus::-webkit-input-placeholder {  
+	color: $orange 
+}
+ 
+/* Firefox < 19 */
+
+.textarea-field::-moz-input-placeholder,
+.input-field:-moz-placeholder {  
+	color: $white;
+}
+ 
+.textarea-field:focus::-moz-input-placeholder,
+.input-field:focus:-moz-placeholder {  
+	color: $orange ;
+}
+ 
+/* Firefox > 19 */
+
+.textarea-field::-moz-input-placeholder,
+.input-field::-moz-placeholder {  
+	color: $white;
+}
+ 
+
+.textarea-field:focus::-moz-input-placeholder,
+.input-field:focus::-moz-placeholder  {
+	color: $orange; 
+} 
+
+
+/* Internet Explorer 10 */
+
+.textarea-field::-ms-input-placeholder,
+.input-field:-ms-input-placeholder {  
+	color: $white; 
+} 
+
+.textarea-field:focus::-ms-input-placeholder,
+.input-field:focus:-ms-input-placeholder {  
+	color: $orange; 
+}

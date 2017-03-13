@@ -1,0 +1,26 @@
+.choose-us {
+	i.fa {
+		position: absolute;
+		left: 10px;
+		top: 5px;
+		text-align: center;
+		// @include icon-ctrl(60px,36px,$light-cyan);
+		height: 60px;
+		width: 60px;
+		font-size: 36px;
+		color: $light-cyan;
+	}
+
+	h5 {
+		margin: 0;
+	}
+	.box {
+		margin: 35px 5px 0;
+	}
+	.description {
+		p {
+			font-size: 14px;
+		}
+	} //description
+}//choose-us
+

@@ -1,0 +1,20 @@
+{
+	"about"  : "About me",
+	"skills" : "My skills",
+	"portfolio" : "Portfolio",
+	"contact" : "Contact",
+	"programming" : "Programming is",
+	"never-ends" : "an endless story",
+	"whoAm" : "Who am I...",
+	"about-header" : "# About me",
+	"skills-header" : "# My skills",
+	"project-header" : "# Projects",
+	"invitation-projects" : "I would like to  invite you to have look at my projects",
+	"Classic-game-tittle" : "Classic game",
+	"search-country-title": "Search country",
+	"tooltip-text-see" : "Look at code",
+	"tooltip-text-open" : "Open project",
+	"invitation-coperation" : "You are kindly invited to start cooperation with me",
+	"btn-cv-text" : "Show CV",
+	"btn-certificate-text": "Certificate"
+}

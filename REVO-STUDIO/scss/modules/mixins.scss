@@ -1,0 +1,88 @@
+//Mixins
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin boxShadow ($horizontal, $vertical, $blur, $spread, $opacity) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $opacity;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $opacity;
+    box-shadow: $horizontal $vertical $blur $spread $opacity;
+}
+
+@mixin borderRadius ($icon-radius) {
+    -webkit-border-radius: $icon-radius;
+    -moz-border-radius: $icon-radius;
+    -ms-border-radius: $icon-radius;
+    border-radius: $icon-radius;
+}
+
+@mixin icon-ctrl ($size, $font-size) {
+    height: $size;
+    width: $size;
+    line-height: $size;
+    font-size: $font-size;
+    //color: $color-text;
+}
+
+@mixin trans($property, $duration, $effect) {
+    -ms-transition:  $property $duration $effect;
+    -o-transition: $property $duration $effect;
+    -moz-transition: $property $duration $effect;
+    -webkit-transition: $property $duration $effect;
+    transition: $property $duration $effect;
+}
+
+@mixin keyframe($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content
+    }
+    @-o-keyframes #{$animation-name} {
+        @content
+    }
+    @keyframes #{$animation-name} {
+        @content
+    }
+}
+
+@mixin animation ($animation, $duration, $timing, $delay,$fill-mode, $play-state) {
+    -webkit-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    -moz-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    -o-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    animation: $animation $duration $timing $delay $fill-mode $play-state;
+}
+@mixin animation-play-state ($play-state) {
+    -webkit-animation-play-state: $play-state;
+    -moz-animation-play-state: $play-state;
+    -o-animation-play-state: $play-state;
+    animation-play-state: $play-state;
+}
+//grid - not used yet
+
+@mixin smartphone {
+  @media #{$smartphone} {
+    @content;
+  }
+}
+@mixin tablet {
+  @media #{$tablet} {
+    @content;
+  }
+}
+@mixin iPad {
+  @media #{$Ipad} {
+    @content;
+  }
+}
+@mixin desktop {
+  @media #{$desktop} {
+    @content;
+  }
+}
+

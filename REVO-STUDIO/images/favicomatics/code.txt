@@ -1,0 +1,6 @@
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://images/favicomatics/apple-touch-icon-144x144.png" />
+<link rel="icon" type="image/png" href="http://images/favicomatics/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://images/favicomatics/favicon-16x16.png" sizes="16x16" />
+<meta name="application-name" content="Prototype website"/>
+<meta name="msapplication-TileColor" content="##FCFDE" />
+<meta name="msapplication-TileImage" content="http://images/favicomatics/mstile-144x144.png" />

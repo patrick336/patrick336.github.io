@@ -1,0 +1,50 @@
+.portfolio .pattern {
+	margin: 35px auto 70px;
+}
+
+.portfolio-item {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	@include trans(opacity,.5s,ease-out);
+	
+
+	.portfolio-text {
+		position: relative;
+		color: $white;
+		padding-bottom: 10px;
+		border-bottom: 1px solid $white;
+		width: 80%;
+		max-width: 300px;
+		margin: 0 auto;
+		top: 35%;
+		font-size: 16px;
+		
+		@media #{$S} { font-size: 17px;} // 778px 
+	}
+	
+	h5 {
+		margin: 0;
+	}
+
+	.portfolio-cover {
+		height: 60%;
+		max-height: 250px;
+		bottom: -100%;
+		left: 15%;
+	 	right: 15%;
+		overflow: hidden;
+		position: absolute;
+		@include trans(all,.5s,ease-out);
+		background-color: $primary-accent;
+	}
+	 &:hover,&:focus{
+	 	> .portfolio-cover {
+	 		bottom: 20%;
+	 	}
+	 }
+}
+
+.fade {
+	opacity: 0.2;
+}

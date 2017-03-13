@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test portfolio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrick336/patrick336.github.io.git"
+  },
+  "author": "Kalinowski Patryk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrick336/patrick336.github.io/issues"
+  },
+  "homepage": "https://github.com/patrick336/patrick336.github.io#readme"
+}

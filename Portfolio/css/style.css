@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Questrial|Quicksand:400,500,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,700i');
+
+
+
+body {
+	font-family: 'Montserrat',sans-serif;
+	color: #fff;
+	padding-top: 50px;
+	position: relative;
+}
+
+a:link,a:visited ,a:active {
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+section > .container {
+	padding: 40px 0;
+	width: 95%;
+	max-width: 1200px;
+}
+
+.pattern-bottom {
+	padding-bottom: 9px;
+	border-bottom: 2px solid;
+	width: 95%;
+	max-width: 800px;
+	margin-bottom: 70px;
+}
+
+.pattern-top {
+	border-bottom: 4px solid;
+	padding-bottom: 3px;
+} 
+
+.tooltipp {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltipp .tooltiptext {
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.8);
+	min-width: 120px;
+	max-width: 180px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 130%;
+    left: 50%;
+/*    margin-left: -55px;*/
+	transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s;
+	font-size: 12px;
+}
+
+.tooltipp .tooltiptext::after {
+    content: "";
+    position: absolute;
+   	bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent  rgba(0,0,0,0.8) transparent;
+}
+
+.tooltipp:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar {
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #fff;
+	border-radius: 0px;
+}
+#js-translate {
+	float: left;
+	margin: 15px 0;
+	/*height: 20px;*/
+}
+#js-translate > span {
+	margin-right: 10px;
+	cursor: pointer;
+}
+.carousel-control {
+	width: 10%;
+}
+
+.carousel-indicators {
+	right: 1%;
+	margin: 0;
+	width: 50px;
+	left: auto;
+}
+
+.carousel-indicators li {
+	border-radius:  0;
+}
+
+/* #################	SECTION ABOUT ####################*/
+
+.about {
+	background-color: #00293c;
+	position: relative;
+}
+.about::after {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	background: inherit;
+	bottom: -10px;
+	left: 50%;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	margin-left: -10px;
+	z-index: 10;
+}
+.about .pattern-top {
+	border-color: #F62A00;
+}
+.about-text {
+	margin-left: 20px;
+	font-size: 12px;
+	min-height: 335px;
+}
+.about-text h3 {
+	font-size: 18px;
+	margin: 20px 0 5px; 
+}
+.list {
+	list-style-type: square;
+	padding: 0;
+	margin-left: 20px;
+}
+.list > li {
+	padding: 12px 0;
+	
+}
+.welcome-img {
+	background: #ccc url("../images/beach-me.jpg") center/cover;
+	height: 320px;
+	padding-top: 120px;
+	border-radius: 1px;
+	box-shadow: 0px 0px  15px 0px rgba(0,0,0,1);
+	margin-top: 20px;
+}
+.welcome-img h3 {
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+	margin: 5px 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+.welcome-img i.fa {
+	font-size: 28px;
+	margin: 5px auto;
+	text-align: center;
+	display: block;	
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.grayscale {
+/* 	-webkit-filter: grayscale(1);
+ 	-o-filter: grayscale(1);
+  	filter: grayscale(1);*/
+	-webkit-transition: filter .5s;
+	-webkit-transition: -webkit-filter .5s;
+	transition: -webkit-filter .5s;
+	transition: filter .5s;
+	transition: filter .5s, -webkit-filter .5s;
+}
+.grayscale:hover, 
+.grayscale:focus {
+ 	-webkit-filter: grayscale(1);
+ 	-o-filter: grayscale(1);
+  	filter: grayscale(1);
+}
+
+/* #################	SECTION SKILLS ####################*/
+
+.skills {
+	background-color: #d9d9d9;
+	color: #000;
+	position: relative;
+}
+.skills::after {
+	position: absolute;
+	content: '';
+	height: 20px;
+	width: 20px;
+	background: inherit;
+	bottom: -10px;
+	left: 50%;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	margin-left: -10px;
+	z-index: 10;
+}
+.skills .pattern-top {
+	border-color: #00293c;
+}
+.skill-box {
+	max-width: 200px;
+	margin: 0px auto 30px;
+	text-align: center;
+	/*padding: 10px;*/
+}
+.skill-text {
+	font-size: 13px;
+	min-height: 200px;
+}
+[class*='devicon'] {
+	font-size: 48px;
+	margin-right: 15px;
+}
+[class*='fa-star'] {
+	font-size: 18px;
+}
+.btn-certificate {
+	font-weight: 900;
+	margin: 50px auto;
+	display: block;
+}
+.btn-certificate::after {
+	content: "\e233";
+	font-family: 'Glyphicons Halflings';
+	margin-left: 10px;    
+	font-size: 17px;
+	display: inline-block;
+	position: relative;
+    top: 1px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* #################	SECTION PROJECTS ####################*/
+
+.projects {
+	background: #323637;
+}
+.projects .pattern-top {
+	border-color: #F62A00;  
+}
+
+.project-card {
+	margin: 20px auto;
+	border: 2px solid #d9d9d9;
+	max-width: 300px;
+	max-height: 250px;
+	position: relative;
+	overflow: hidden;
+	min-height: 50px;
+}
+.project-caption {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	right: -100%;
+	width: 100%;
+	background-color: rgba(246, 42, 0,0.8);
+	text-align: center;
+	z-index: 100;	
+	-webkit-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	padding-top: 20%;
+	font-family: 'Questrial', sans-serif;
+	text-transform: uppercase;
+}
+.project-caption h5 {
+	text-decoration: underline;
+	letter-spacing: 3px;
+}
+.project-caption i.fa {
+	font-size: 22px;
+}
+
+.project-caption a {
+	display: inline-block;
+	margin: 10px 10px 0;
+	padding: 0 5px;
+}
+
+.project-card:hover .project-caption, 
+.project-card:focus .project-caption {
+	right: 0;
+}
+
+/* #################	SECTION CONTACT #################### */
+
+.contact-image {
+	background: #F4F4F4 url("../images/contact_lastversion.jpg") center/cover no-repeat;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	
+}
+.btn-cv {
+	background: #F62A00;
+	color: #fff;
+	font-weight: 500;
+	margin: 25px auto 30px;
+	display: block;
+	max-width: 90px;
+	-webkit-transition: all .7s;
+	transition: all .7s;
+}
+.btn-cv:focus {
+	color: #fff;
+}
+.btn-cv:hover {
+/*
+	-webkit-box-shadow: 2px 2px 0px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(255,255,255,1);
+	box-shadow: 2px 2px  0px 0px rgba(255,255,255,1);
+*/
+	background: #fff;
+	color: #F62A00;
+} 
+.slogan {
+	background-color: rgba(0,0,0,0.6);
+	padding: 4% 2%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.slogan blockquote {
+	border-right: 5px solid #eee;
+	font-size: 14px;
+	max-width: 300px;
+	margin: 0 auto;
+}
+.slogan h4 {
+	font-size: 15px;
+	margin: 0;
+	min-height: 35px;
+}
+
+/* #################	SECTION FOOTER ####################*/
+
+footer {
+	background-color: #00293c;
+}
+.social-media {
+	padding: 15px 0;
+}
+.social-media i.fa {
+	margin: 0 15px;
+	font-size: 16px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	position: relative;
+	z-index: 2;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.social-media i.fa::after {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	height: 30px;
+	width: 30px;
+	left: 0;
+	border: 2px solid;	
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.social-media i.fa:hover,
+.social-media i.fa:focus
+{
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);	
+
+}
+
+.social-media i.fa:hover::after,
+.social-media i.fa:focus::after 
+{
+	border-color: #F62A00;
+}
+
+
+
+/* FLAGS */
+
+
+.flag-icon-background {
+    height: 100px;
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+

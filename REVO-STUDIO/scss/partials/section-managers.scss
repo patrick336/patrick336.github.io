@@ -1,0 +1,64 @@
+// MANAGERS
+
+
+.our-testimonials { 
+	background: $black1 url($image-testimonials) bottom center/cover no-repeat fixed ;
+	color: $white;
+}
+
+.members  {
+	height: 400px; 
+	overflow: hidden; 
+	max-width: 700px; 
+	width: 100% ;
+	margin: 0 auto; 
+}
+
+.person-container {  
+	height: 400px; 
+	padding: 0; 
+	margin: 0; 
+} 
+
+.person { 
+	height: 400px; 
+	max-width: 700px; 
+	width: 100%; 
+
+ 	p  {
+		font-size: 12px; 
+		padding: 0 5px;
+		
+		@media #{$S} { font-size: 13px;}
+		@media #{$M} { font-size: 14px;}
+ 	}
+}//person
+.person-image { 
+	margin: 0 auto; 
+	width: 90px; 
+	height: 90px;
+	@include borderRadius(50%);
+} 
+
+.dots { 
+	width: 150px; 
+	text-align: center; 
+	margin: 50px auto; 
+} 
+
+.dot { 
+	display: inline-block; 
+	padding: 5px; 
+	margin: 0 5px;
+	height: 10px; 
+	width: 10px; 
+	background-color: transparent; 
+	border: 2px solid $white; 
+	cursor: pointer;
+	@include trans(background-color,1s,ease);
+	@include borderRadius(50%);
+} 
+
+.active-dot { 
+	background: $white;
+}

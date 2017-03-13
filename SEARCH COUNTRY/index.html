@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<title>Wyszukiwarka krajów</title>
+	<!--	FRAMEWORK BOOTSTRAP-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- LIBRARY FLAGS	-->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.min.css">-->
+	<link rel="stylesheet" href="./css/style.css"> 
+	<link rel="stylesheet" href="./css/flag-icon.min.css">
+</head>
+<body>
+	<div class="wrapper"> 
+		<span class="flag-icon flag-icon-pl"></span>
+		<h2>Wyszukiwarka krajów</h2>
+		<input id="country-name" type="text" />
+		<button id="search">Szukaj kraju</button>
+		<h3>Lista krajów:</h3> 
+		<span id="result"></span>
+		<section id="countries">Brak wyników wyszukiwania</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

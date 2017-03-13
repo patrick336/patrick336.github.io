@@ -1,0 +1,20 @@
+{
+	"about"  : "O mnie",
+	"skills" : "Umiejętności",
+	"portfolio" : "Portfolio",
+	"contact" : "Kontakt",
+	"programming" : "Programowane to",
+	"never-ends" : "niekończąca się opowieść",
+	"whoAm" : "Kim jestem...",
+	"invitation-projects" : "Zapraszam do obejrzenia moich projektów",
+	"invitation-coperation" : "Zapraszam do współpracy",
+	"about-header" : "# O mnie",
+	"skills-header" : "# Umiejętności",
+	"project-header" : "# Projekty",
+	"Classic-game-tittle" : "Gra klasyczna" ,
+	"search-country-title": "Wyszukiwarka krajów",
+	"tooltip-text-see" : "Zerknij na kod",
+	"tooltip-text-open" : "Otwórz projekt",
+	"btn-cv-text" : "Pokaż CV",
+	"btn-certificate-text": "Certyfikat"
+}

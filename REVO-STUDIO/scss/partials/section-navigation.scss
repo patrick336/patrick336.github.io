@@ -1,0 +1,96 @@
+.sticky {  
+	position: fixed; 
+	width: 100%; 
+	z-index: 1000; 
+	left: 0; 
+	top: 0; 
+} 
+
+.logo {  
+	text-align: left; 
+	font-size: 22px; 
+	letter-spacing: 2px; 
+	height: 60px; 
+	line-height: 60px; 
+	padding-left: 15px; 
+	text-transform: uppercase; 
+	font-family: $Ubuntu; 
+} 
+
+//#js-menu-button {
+//	
+//	display: none;
+//	
+//	&:not(:checked)~.navigation-menu {
+//		display: none;
+//	}
+//        
+//	&:checked~.navigation-menu {
+//            display: block;
+//	}
+//}
+
+
+.navigation { 
+	font-weight: 900; 
+	color: $white; 
+	background: rgba(0, 0, 0, 0.75); 
+	min-height: 60px;
+	
+	@media #{$S} { background: transparent;}
+}
+
+.navigation-menu { 
+	display: none;
+	
+	@media #{$S} { 
+	  float: right;
+	  display: block !important;
+	}
+
+ 	li  {
+		float: none;
+		
+		@media #{$S} { float: left;}
+ 
+  	&:hover,
+  	&:focus {
+  		> a {  
+  			color: $light-cyan;
+  	  }	
+  	}
+ 	}//li
+ 	a {
+ 		height: 60px; 
+		line-height: 67px; 
+		padding: 0 15px; 
+		display: block; 
+		text-align: center; 
+		font-family: $Montserrat; 
+		font-weight: 600; 
+		text-transform: capitalize;
+		@include trans(all,.1s,linear);
+ 	} //a - menu-links
+}//navigation-menu 
+
+.hamburger  {
+	position: absolute; 
+	top: 14px; 
+	right: 15px; 
+	border: none;
+	background: inherit; 
+	cursor: pointer;
+	color: $white;
+	@include icon-ctrl(30px,20px);
+	
+	&:after {
+		content: "\f0c9";
+		display: inline-block;
+    	font: normal normal normal 14px/1 FontAwesome;
+    	font-size: inherit;
+    	text-rendering: auto;
+    	-webkit-font-smoothing: antialiased;
+	} 
+	
+	@media #{$S} {display: none;}
+}

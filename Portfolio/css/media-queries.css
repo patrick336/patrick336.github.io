@@ -1,0 +1,108 @@
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+	
+	.col-xxs-1 {
+		width: 8.33%;
+	}
+	.col-xxs-2 {
+		width: 16.66%;
+	}
+	.col-xxs-3 {
+		width: 25%;
+	}
+	.col-xxs-4 {
+		width: 33.33%;
+	}
+	.col-xxs-5 {
+		width: 41.66%;
+	}
+	.col-xxs-6 {
+		width: 50%;
+	}
+	.col-xxs-7 {
+		width: 58.33%;
+	}
+	.col-xxs-8 {
+		width: 66.66%;
+	}
+	.col-xxs-9 {
+		width: 75%;
+	}
+	.col-xxs-10 {
+		width: 83.33%;
+	}
+	.col-xxs-11 {
+		width: 91.66%;
+	}
+	.col-xxs-12 {
+		width: 100%;
+	}
+	
+	.welcome-img h3 {
+		font-size: 22px;
+	}
+}
+
+
+@media only screen and (min-width: 590px) {
+		
+	.slogan {
+		right: .5%;
+		width: 43%;
+		max-width: 400px;
+		bottom: 30%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	
+	section > .container {
+		width: 100%;
+	}
+	#js-translate {	
+		margin: 15px 0px 15px 30px;
+	}
+	.adjust-col {
+		float: right;
+	}
+
+	.about-text {
+		font-size: 14px;
+	}
+	
+	.about-text h3 {
+		font-size: 20px;
+	}
+	
+	.welcome-img h3 {
+		font-size: 24px;
+	}
+		
+	.slogan {
+		right: 1%;
+	}
+	.slogan blockquote {
+		font-size: 15px;
+	}
+	.slogan h4 {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 922px) {
+	
+	.welcome-img h3 {
+		font-size: 26px;
+	}
+	
+	.slogan {
+		right: 2%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.slogan {
+		right: 3%;
+	}
+}

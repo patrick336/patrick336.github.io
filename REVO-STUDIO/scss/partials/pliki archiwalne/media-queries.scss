@@ -1,0 +1,202 @@
+	@media screen and (min-width: 480px) {
+
+		/*SECTION OUR FEATURES - ICONS*/
+		.icon-wrapper p {
+			font-size: 14px;
+		}
+		.main-text {
+			font-size: 130%;
+		}
+		.main-paragraphs {
+			font-size: 14px;
+		}
+		/*SECTION GALLERY - BUTTONS*/
+		.btn-custom-3 {
+			margin: 5px;
+		}
+		/*		 SECTION CREATIVE DESIGN - OUR EXPERTISE */
+		.skill-header {
+			font-size: 16px;
+		}
+		.skill-text {
+			font-size: 13px;
+		}
+		.label p {
+			font-size: 12px;
+		}
+		/* SECTION CONTACT US */
+		.contact-us p {
+			font-size: 12px;
+		}
+	}
+	
+	@media screen and (min-width: 768px) {
+
+		/*Add space between sections*/
+		section .container {
+			margin: 0 auto;
+			padding: 70px 0;
+		}
+		/*NAVIGATION*/
+		.hamburger {
+			display: none;
+		}
+		.navigation {
+			background: transparent;
+		}
+		.navigation-menu {
+			float: right;
+			display: block !important;
+		}
+		.navigation-menu li {
+			float: left;
+		}
+		/*SECTION JUMBOTRON*/
+		.hero-content h1 {
+			font-size: 60px;
+		}
+		.hero-content p {
+			font-size: 18px;
+		}
+		.main-text {
+			font-size: 150%;
+		}
+		.main-paragraphs {
+			font-size: 15px;
+		}
+		/*SECTION OUR-TEAM */
+		.photo {
+			margin: 0 auto;
+			padding: 4%;
+		}
+		/* SECTION CREATIVE DESIGN */
+		.creative-design .box {
+			/*		margin: 30px auto;*/
+		}
+		.image-1,
+		.image-2 {
+			display: block;
+		}
+		/*OUR EXPERTISE */
+		.skill-header {
+			font-size: 18px;
+		}
+		.skill-text {
+			font-size: 14px;
+		}
+		.label p {
+			font-size: 13px;
+		}
+		/*SECTION OUR TESTIMONIALS */
+		.person p {
+			font-size: 13px;
+		}
+		/*SECTION FOOTER-END */
+		.footer-wrap {
+			max-width: 650px;
+		}
+	}
+	
+	@media screen and (min-width: 922px) {
+
+		/*SECTION JUMBOTRON */
+		.hero-content h1 {
+			font-size: 65px;
+		}
+		.hero-content p {
+			font-size: 19px;
+		}
+		.icon-wrapper p {
+			font-size: 15px;
+		}
+		/*SECTION OUR TESTIMONIALS */
+		.person p {
+			font-size: 14px;
+		}
+		/* SECTION CREATIVE DESIGN */
+		.creative-design .box {
+			margin-top: 3%;
+		}
+		/*OUR EXPERTISE */
+		.skills {
+			padding: 4% 0;
+		}
+		.skill-header {
+			font-size: 16px;
+		}
+		.skill-text {
+			font-size: 12px;
+		}
+		.label p {
+			font-size: 11px;
+		}
+		.loading-container {
+			margin-bottom: 2%;
+		}
+		/* SECTION FOOTER-END */
+		.footer-wrap {
+			max-width: 900px;
+		}
+		#newsletter {
+			margin: 0;
+		}
+		.btn-custom-5 {
+			margin: 0;
+		}
+	}
+	
+	@media screen and (min-width:1024px) {
+		/* SECTION CREATIVE DESIGN */
+		.creative-design .box {
+			margin-top: 5%;
+		}
+		/*OUR EXPERTISE */
+		.loading-container {
+			margin-bottom: 3%;
+		}
+		.skill-header {
+			font-size: 17px;
+		}
+		.skill-text {
+			font-size: 13px;
+		}
+		.label p {
+			font-size: 12px;
+		}
+	}
+	
+	@media screen and (min-width:1200px) {
+		
+		/*SECTION CREATIVE DESIGN*/
+		.creative-design .box {
+			margin-top: 8%;
+		}
+		.creative-design i.fa {
+			width: 65px;
+			height: 65px;
+			line-height: 65px;
+			font-size: 160%;
+		}
+		/*OUR EXPERTISE */
+		.loading {
+			top: 30px;
+		}
+		.label {
+			top: -250%;
+		}
+		.skills {
+			padding: 5% 0;
+		}
+		.skill-header {
+			font-size: 18px;
+		}
+		.skill-text {
+			font-size: 14px;
+		}
+		.label p {
+			font-size: 13px;
+		}
+		.footer-wrap {
+			max-width: 1200px;
+		}
+	}

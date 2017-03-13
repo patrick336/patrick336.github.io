@@ -1,0 +1,25 @@
+// Modules and Variables
+@import "modules/global-variables";
+@import "modules/mixins";
+
+//Partials
+@import "partials/universal-class";
+@import "partials/section-navigation";
+@import "partials/section-jumbotron";
+@import "partials/section-features";
+@import "partials/section-gallery";
+@import "partials/section-creative-design";
+@import "partials/section-our-team";
+@import "partials/section-statistics";
+@import "partials/section-choose-us";
+@import "partials/section-managers";
+@import "partials/section-offerts";
+@import "partials/section-blog-sliders";
+@import "partials/section-contact-us";
+@import "partials/section-footer";
+
+
+@import "partials/test";
+
+// Grid system 
+@import "partials/grid";

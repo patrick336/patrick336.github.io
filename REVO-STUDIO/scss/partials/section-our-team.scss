@@ -1,0 +1,18 @@
+// SECTION OUR TEAM
+
+.photo {  
+	max-width: 340px; 
+	margin: 10px auto; 
+	padding: 2%;
+	
+	@media #{$S} {
+	  margin: 0 auto;
+	  padding: 4%;
+	}
+ 
+	img {
+	  @include boxShadow (0px, 0px ,7px, 0px, rgba(0, 0, 0, 0.75));
+	  margin: 0 auto;
+	}
+	
+}//photo

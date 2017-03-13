@@ -1,0 +1,50 @@
+// SECTION WELCOME
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: 100vh ;
+  	-webkit-background: $light-cyan url($image-jumbotron) center/cover no-repeat fixed ;
+  	-o-background: $light-cyan url($image-jumbotron) center/cover no-repeat fixed ;
+	-moz-background: $light-cyan url($image-jumbotron) center/cover no-repeat fixed;
+	background: $light-cyan url($image-jumbotron) center/cover no-repeat fixed ;
+	text-align: center;
+	overflow: hidden;
+}
+
+.hero-content {
+	position: absolute;
+	top: 0 ;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+	padding-top: 35vh;
+	padding-bottom: 0vh ;
+	color: white ;
+
+	h1  {
+		letter-spacing: 0;
+		font-size: 37px ;
+		margin: 0 ;
+		word-spacing: 5px;
+
+		@media #{$S} {font-size: 60px;}
+		@media #{$M} {font-size: 65px;}
+	}
+
+	p  {
+		overflow: hidden ;
+		font-size: 16px ;
+		font-weight: 300 ;
+		color: rgba(255, 255, 255, 0.8);
+
+		@media #{$S} {font-size: 18px;}
+		@media #{$M} {font-size: 19px;}
+	}
+}//hero-content
+
+.hero-content-inner {
+	height: 65vh;
+	overflow: hidden;
+	position: relative;
+}

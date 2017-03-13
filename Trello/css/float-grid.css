@@ -1,0 +1,250 @@
+.container {
+	width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col-"]{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+@media (min-width:468px) {
+    .col-xs-1 {
+        -ms-width: 8.333%;
+        width: 8.333%;
+    }
+    .col-xs-2 {
+        -ms-width: 16.667%;
+        width: 16.667%;
+    }
+    .col-xs-3 {
+        -ms-width: 25%;
+        width: 25%;
+    }
+    .col-xs-4 {
+        -ms-width: 33.333%;
+        width: 33.333%;
+    }
+    .col-xs-5 {
+        -ms-width: 41.667%;
+        width: 41.667%;
+    }
+    .col-xs-6 {
+        -ms-width: 50%;
+        width: 50%;
+    }
+    .col-xs-7 {
+        -ms-width: 58.333%;
+        width: 58.333%;
+    }
+    .col-xs-8 {
+        -ms-width: 66.667%;
+        width: 66.667%;
+    }
+    .col-xs-9 {
+        -ms-width: 75%;
+        width: 75%;
+    }
+    .col-xs-10 {
+        -ms-width: 83.333%;
+        width: 83.333%;
+    }
+    .col-xs-11 {
+        -ms-width: 91.667%;
+        width: 91.667%;
+    }
+    .col-xs-12 {
+        -ms-width: 100%;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+    .create-column {
+        width: 60%;
+    }
+
+}
+
+@media (min-width:768px) {
+    .col-sm-1 {
+        -ms-width: 8.333%;
+        width: 8.333%;
+    }
+    .col-sm-2 {
+        -ms-width: 16.667%;
+        width: 16.667%;
+    }
+    .col-sm-3 {
+        -ms-width: 25%;
+        width: 25%;
+    }
+    .col-sm-4 {
+        -ms-width: 33.333%;
+        width: 33.333%;
+    }
+    .col-sm-5 {
+        -ms-width: 41.667%;
+        width: 41.667%;
+    }
+    .col-sm-6 {
+        -ms-width: 50%;
+        width: 50%;
+    }
+    .col-sm-7 {
+        -ms-width: 58.333%;
+        width: 58.333%;
+    }
+    .col-sm-8 {
+        -ms-width: 66.667%;
+        width: 66.667%;
+    }
+    .col-sm-9 {
+        -ms-width: 75%;
+        width: 75%;
+    }
+    .col-sm-10 {
+        -ms-width: 83.333%;
+        width: 83.333%;
+    }
+    .col-sm-11 {
+        -ms-width: 91.667%;
+        width: 91.667%;
+    }
+    .col-sm-12 {
+        -ms-width: 100%;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    .create-column {
+        font-size: 16px;
+    }
+    .column-container {
+        justify-content: center;
+    }
+}
+
+@media (min-width:922px) {
+    .col-md-1 {
+        -ms-width: 8.333%;
+        width: 8.333%;
+    }
+    .col-md-2 {
+        -ms-width: 16.667%;
+        width: 16.667%;
+    }
+    .col-md-3 {
+        -ms-width: 25%;
+        width: 25%;
+    }
+    .col-md-4 {
+        -ms-width: 33.333%;
+        width: 33.333%;
+    }
+    .col-md-5 {
+        -ms-width: 41.667%;
+        width: 41.667%;
+    }
+    .col-md-6 {
+        -ms-width: 50%;
+        width: 50%;
+    }
+    .col-md-7 {
+        -ms-width: 58.333%;
+        width: 58.333%;
+    }
+    .col-md-8 {
+        -ms-width: 66.667%;
+        width: 66.667%;
+    }
+    .col-md-9 {
+        -ms-width: 75%;
+        width: 75%;
+    }
+    .col-md-10 {
+        -ms-width: 83.333%;
+        width: 83.333%;
+    }
+    .col-md-11 {
+        -ms-width: 91.667%;
+        width: 91.667%;
+    }
+    .col-md-12 {
+        -ms-width: 100%;
+        width: 100%;
+    }
+    header {
+        position: relative;
+        display: width;
+    }
+    .create-column {
+        position: absolute;
+        width: 150px;
+        padding: 10px;
+        top: 25px;
+        left: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1200px) {
+    .col-lg-1 {
+        -ms-width: 8.333%;
+        width: 8.333%;
+    }
+    .col-lg-2 {
+        -ms-width: 16.667%;
+        width: 16.667%;
+    }
+    .col-lg-3 {
+        -ms-width: 25%;
+        width: 25%;
+    }
+    .col-lg-4 {
+        -ms-width: 33.333%;
+        width: 33.333%;
+    }
+    .col-lg-5 {
+        -ms-width: 41.667%;
+        width: 41.667%;
+    }
+    .col-lg-6 {
+        -ms-width: 50%;
+        width: 50%;
+    }
+    .col-mlg7 {
+        -ms-width: 58.333%;
+        width: 58.333%;
+    }
+    .col-lg-8 {
+        -ms-width: 66.667%;
+        width: 66.667%;
+    }
+    .col-lg-9 {
+        -ms-width: 75%;
+        width: 75%;
+    }
+    .col-lg-10 {
+        -ms-width: 83.333%;
+        width: 83.333%;
+    }
+    .col-lg-11 {
+        -ms-width: 91.667%;
+        width: 91.667%;
+    }
+    .col-lg-12 {
+        -ms-width: 100%;
+        width: 100%;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+}

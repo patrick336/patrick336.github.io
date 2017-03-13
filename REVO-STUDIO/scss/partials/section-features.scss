@@ -1,0 +1,23 @@
+// SECTION FEATURES
+
+.icon-wrapper  {
+	padding: 0 15px; 
+	max-width: 400px; 
+	margin: 25px auto; 
+ 
+	.fa { 
+		@include icon-ctrl (90px,36px);
+		@include borderRadius(50%); 
+    	border: 1.5px solid $light-cyan;
+		color: $light-cyan;
+	}
+ 	p  {
+		font-size: 13px; 
+		word-wrap: break-word;
+		line-height: 1.7;
+		
+		
+		@media #{$XS} { font-size: 14px;}
+		@media #{$M} { font-size: 15px;}
+ 	}
+}//icon-wrapper

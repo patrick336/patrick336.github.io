@@ -1,0 +1,43 @@
+// ----
+// Sass (v3.4.21)
+// Compass (v1.0.3)
+// ----
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,700|Open+Sans|Ubuntu:400,700');
+
+//maxWidth Container
+$maxWidthSite: 1200px;
+
+//Images
+$image-jumbotron: '../images/meeting-1280-853.jpg';
+$image-testimonials: '../images/mountaing-rude.jpeg';
+$image-contact-form: '../images/mountains-1280-853.jpeg';
+
+// Colours of the project
+$dirty-white: #f0f5f9;
+$black1: #1a1a1a;
+$black2: #141414;
+$white: #fff;
+$light-cyan: #67d5b5;
+$primary-accent: rgba(103, 213, 181,0.85);
+$lightgray: #9E9E9E;
+
+//Inputs colours
+$orange: rgb(255, 152, 0);
+$orange-with-opacity: rgba(255, 152, 0, 0.2);
+$green: rgb(85, 238, 112);
+$green-with-opacity: rgba(0, 255, 0, 0.2);
+
+//Fonts
+$Ubuntu: "Ubuntu", sans-serif ;
+$Verdana: "Verdana", sans-serif;
+$Lato: "Lato", sans-serif;
+$Montserrat: "Montserrat", sans-serif;
+$OpenSans: "Open Sans", sans-serif;
+
+//Breakpoints
+$XS: 'screen and (min-width: 480px)';
+$S: 'screen and (min-width: 768px)';
+$M:'screen and (min-width: 922px)';
+$L:'screen and (min-width:1024px)';
+$XL: 'screen and (min-width:1200px)';

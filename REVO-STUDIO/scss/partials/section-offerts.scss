@@ -1,0 +1,93 @@
+// OUR OFFERTS - PACKAGES
+
+
+.offer  {
+	max-width: 300px; 
+	margin: 10px auto;
+	border: 2px solid $dirty-white;
+
+	p {
+		text-transform: uppercase; 
+		letter-spacing: 1px; 
+		font-size: 14px; 
+		margin: 0;
+	}
+	button {
+			@include trans(all,.3s,ease-in-out); 
+	}
+ 
+	&:hover,
+	&:focus {
+		border-color: $light-cyan; 
+			
+		.top-content { 
+			background: $light-cyan; 
+			color: $white; 
+		}
+		button { 
+			@include transform(scale(1.15));
+		}
+	}
+	ol { 
+		margin-top: 10px;
+		
+		> li {  
+			background: $white;
+			padding: 10px;
+			position: relative; 
+			font-family: $Verdana;
+			font-size: 12px; 
+		
+
+			&:before { 
+				font-family: 'fontAwesome'; 
+				content: "\f00c"; 
+				width: 25px;
+				height: 25px;
+				text-align: center;
+				position: absolute;
+				left: 5% ;
+				display: inline-block ;
+			}
+
+			&:last-of-type {
+				&:before {  
+					font-family: 'fontAwesome'; 
+					content: "\f00d";
+			  }
+			}
+		}//li
+	} //ol
+} //offer
+
+.top-content {  
+	padding: 30px; 
+	background-color: $dirty-white; 
+ 
+
+ 	h5 { 
+		margin: 10px; 
+		letter-spacing: 2px; 
+		text-transform: uppercase; 
+		font-family: $Ubuntu;
+ 	}
+}// top-content
+.down-content { 
+	background: $white ;
+}
+.price {  
+	display: inline-block; 
+	font-weight: 900; 
+	font-size: 38px; 
+	position: relative; 
+	font-family: $Ubuntu;
+ 
+	&:before {  
+		position: absolute; 
+		font-family: 'fontAwesome'; 
+		content: "\f155"; 
+		left: -12px; 
+		font-size: 19px; 
+		font-weight: 100;
+	}
+}//price
