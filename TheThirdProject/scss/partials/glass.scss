@@ -1,0 +1,28 @@
+// /* Style for "GLASS
+// Sed" */
+// width: 569px;
+// height: 569px;
+// /* Text style for "GLASS" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// line-height: 30px;
+// /* Text style for "Sed ut per" */
+// color: #666666;
+// font-family: "PT Sans";
+// font-size: 14px;
+// line-height: 30px;
+// /* Text style for "why tdk GL" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// text-transform: uppercase;
+
+
+
+.image-glass {
+  @extend .bg-cover;
+  background-image: url($glass-image);
+}

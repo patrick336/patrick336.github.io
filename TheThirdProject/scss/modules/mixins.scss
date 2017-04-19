@@ -1,0 +1,27 @@
+@mixin keyframe($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content
+    }
+    @-o-keyframes #{$animation-name} {
+        @content
+    }
+    @keyframes #{$animation-name} {
+        @content
+    }
+}
+
+@mixin animation ($animation, $duration, $timing, $delay,$fill-mode, $play-state) {
+    -webkit-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    -moz-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    -o-animation: $animation $duration $timing $delay $fill-mode $play-state;
+    animation: $animation $duration $timing $delay $fill-mode $play-state;
+}
+@mixin animation-play-state ($play-state) {
+    -webkit-animation-play-state: $play-state;
+    -moz-animation-play-state: $play-state;
+    -o-animation-play-state: $play-state;
+    animation-play-state: $play-state;
+}

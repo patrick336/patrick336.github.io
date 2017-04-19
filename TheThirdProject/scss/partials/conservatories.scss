@@ -1,0 +1,4 @@
+.image-taras {
+  @extend .bg-cover;
+  background-image: url($taras-image);
+}

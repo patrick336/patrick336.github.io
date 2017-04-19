@@ -1,0 +1,32 @@
+// /* Style for "DOORS
+// Comp" */
+// width: 568px;
+// height: 549px;
+// /* Text style for "DOORS" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// line-height: 30px;
+
+
+// /* Text style for "Composite" */
+// color: #666666;
+// font-family: "PT Sans";
+// font-size: 14px;
+// line-height: 30px;
+
+
+// /* Text style for "why tdk do" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// text-transform: uppercase;
+
+
+
+.image-door{
+  @extend .bg-cover;
+  background-image: url($door-image);
+}

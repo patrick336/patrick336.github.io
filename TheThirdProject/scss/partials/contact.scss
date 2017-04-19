@@ -1,0 +1,116 @@
+// /* Style for "CONTACT
+// TD" */
+// width: 524px;
+// height: 306px;
+// /* Text style for "CONTACT" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// line-height: 30px;
+// /* Text style for "TDK Trade" */
+// color: #666666;
+// font-family: "PT Sans";
+// font-size: 14px;
+// line-height: 30px;
+// /* Text style for "PLEASE FIL" */
+// color: #2e2e2e;
+// font-family: Montserrat;
+// font-size: 22px;
+// font-weight: 700;
+// text-transform: uppercase;
+
+
+
+/* Input text */
+// width: 573px;
+// height: 36px;
+
+
+/* Style for "Rectangle" */
+// width: 573px;
+// height: 62px;
+
+
+/* MAP */
+// width: 578px;
+// height: 852px;
+
+.image-garden {
+  @extend .bg-cover;
+  background-image: url($garden-image);
+  position: relative;
+}
+
+.address {
+
+  margin-bottom: 30px;
+  @extend .p;
+  font-style: normal;
+  font-weight: 700;
+}
+.address p {
+  margin: 0 0 5px;
+}
+
+
+#map {
+  position: absolute;
+  height: 80%;
+  width: 85%;;
+  max-height: 852px;
+  max-width: 578px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.field-wrap {
+  max-width: 573px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 13px 22px 11px;
+  font-size: 12px;
+  font-family: $PT-Caption;
+  line-height: 30px;
+  outline: none;
+  display: block;
+  max-width: 573px;
+  width: 100%;
+  resize: none;
+  color: $dark-gray;
+  font-weight: 700;
+}
+
+
+.input-field::-webkit-input-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption ;
+  font-size: 12px;
+  line-height: 30px;
+}
+.input-field::-moz-placeholder {
+
+  color: $input-gray;
+  font-family: PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}
+.input-field:-ms-input-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.input-field:-moz-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}

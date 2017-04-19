@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+.container {
+  width: 100%;
+  margin: 0 auto; }
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col"] {
+  min-height: 1px;
+  width: 100%;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+/*# sourceMappingURL=standard-classes.css.map */
