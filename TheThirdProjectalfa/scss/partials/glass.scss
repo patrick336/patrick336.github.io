@@ -1,0 +1,4 @@
+.image-glass {
+  @extend .bg-cover;
+  background-image: url($glass-image);
+}

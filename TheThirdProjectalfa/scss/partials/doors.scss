@@ -1,0 +1,4 @@
+.image-door{
+  @extend .bg-cover;
+  background-image: url($door-image);
+}

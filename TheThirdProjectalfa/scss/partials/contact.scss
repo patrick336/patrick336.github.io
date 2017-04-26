@@ -1,0 +1,94 @@
+
+.image-garden {
+  @extend .bg-cover;
+  background-image: url($garden-image);
+  position: relative;
+}
+
+.address {
+
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  @extend .p;
+}
+
+.address p {
+  margin: 0 ;
+
+  // sekcja z formularzem ponizej pewnej wysokosci ekranu zdecydowanie wystaje
+  @media (min-width: 1200px) and (max-height: 921px) {
+      display: inline-block;
+  }
+  @media (min-width: 1200px) and (min-height: 922px) {
+      display: block;
+  }
+}
+
+
+#map {
+  position: absolute;
+  height: 80%;
+  width: 85%;
+  max-height: 852px;
+  max-width: 578px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.field-wrap {
+  max-width: 573px;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) and (max-height: 921px) {
+      margin-bottom: 15px;
+  }
+}
+
+// Pól edycyjnych nie ruszamy,uzytkownik musi swobodnie kliknac w pole
+.input-field {
+  padding: 13px 22px 11px;
+  font-size: 12px;
+  font-family: $PT-Caption;
+  line-height: 30px;
+  outline: none;
+  display: block;
+  max-width: 573px;
+  width: 100%;
+  resize: none;
+  color: $dark-gray;
+  font-weight: 700;
+  border: 1px solid $input-gray;
+}
+
+// Placeholdery - prefixes
+.input-field::-webkit-input-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption ;
+  font-size: 12px;
+  line-height: 30px;
+}
+.input-field::-moz-placeholder {
+
+  color: $input-gray;
+  font-family: PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}
+.input-field:-ms-input-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.input-field:-moz-placeholder {
+
+  color: $input-gray;
+  font-family: $PT-Caption;
+  font-size: 12px;
+  line-height: 30px;
+}

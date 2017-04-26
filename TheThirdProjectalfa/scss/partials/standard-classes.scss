@@ -1,0 +1,212 @@
+// Ustawienie wszystkich elementów
+// Do wysokości i szerokości elementu  wliczane są paddingi,obramowania,zawartość, za wyjątkiem marginesu
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding-top: 70px;
+
+	@media (min-width: 768px) {
+		padding-top: 80px;
+	}
+	@media (min-width: 992px) {
+		padding-top: 90px;
+	}
+	@media (min-width: 992px) {
+		padding-top: 0px;
+	}
+}
+
+// Główny kontener
+.flex-container {
+
+	min-height: 100vh;
+	overflow: hidden;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+
+	// Podkontenery
+	.flex-item {
+		flex: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow-y: auto;
+
+		@media (min-width: 1200px) {
+			min-height: 100vh;
+			flex: 50%;
+		}
+	}
+}
+
+// Skalowanie obrazu
+.responsive-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+// Nagłówki
+.headers {
+
+	font-family: $Montserrat;
+	font-weight: 700;
+	color: $dark-gray;
+	text-transform: uppercase;
+	font-size: 19px;
+	margin: 0 0 15px;
+
+	@media (min-width: 768px) {
+		font-size: 20px;
+	}
+
+	@media (min-width: 1200px) and (min-height: 992px) {
+		font-size: 22px;
+		margin: 0 0 30px;
+		line-height: 30px;
+	}
+
+	@media (min-width: 1200px) and (max-height: 991px) {
+		font-size: 20px;
+	}
+
+	@media (min-width: 1400px) and (min-height: 992px) {
+		font-size: 24px;
+		line-height: 32px;
+		// margin: 0 0 30px;
+	}
+
+}
+// Paragrafy
+.p {
+	color: $light-gray;
+	font-family: $PT-Sans;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 0 0 15px;
+
+	@media (min-width: 768px) {
+		font-size: 13px;
+		line-height: 28px;
+	}
+
+	// Został dodany próg względem wysokości aby tekst nie był zbyt ciasny
+	@media (min-width: 1200px) and (min-height: 922px) {
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+	@media (min-width: 1200px) and (max-height: 991px) {
+		font-size: 13px;
+		line-height: 24px;
+	}
+
+	@media (min-width: 1400px) and (min-height: 922px) {
+		font-size: 16px;
+		line-height: 32px;
+	}
+}
+
+// Charakterystyczny przycisk
+.btn-accent {
+	background: $primary-accent;
+	color: $white;
+	cursor: pointer;
+	border: none;
+	width: 160px;
+	height: 42px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 30px;
+	margin-top: 20px;
+	transition:0.3s, ease-out;
+	padding: 0;
+
+	&:hover,&:focus {
+		background: $dark-gray;
+	}
+}
+// Linki
+a:link,a:focus,a:visited,a:active {
+	text-decoration: none;
+	color: $light-gray;
+}
+
+// Obrazy
+.bg-cover {
+	height: 100vh;
+	width: 100%;
+	background: $primary-accent center/cover no-repeat;
+}
+
+// Warstwa na głównym slajderze
+.layer {
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+// Kontener na element typu article
+.text-wrapper {
+
+	//scalowanie kontenera
+	max-width: 572px;
+	width: 100%;
+	padding: 80px 15px;
+
+	@media (min-width: 1200px) {
+		padding: 30px;
+	}
+}
+
+// Stylizacja listy
+.list-styled {
+	margin: 0;
+	padding: 0;
+	list-style-type: disc;
+	padding-left: 15px;
+	color: $light-gray;
+
+	@extend .p;
+}
+
+// Charakterystyczny pasek
+.bar {
+	border-bottom: 5px solid $primary-accent;
+}
+
+// Inna kolejenosc elementów dla mobile ,inna dla desktop
+.windows,.glass  {
+
+	> .flex-item {
+
+		&:nth-of-type(1){
+			order: 2;
+		}
+		&:nth-of-type(2){
+			order: 1;
+		}
+
+		@media (min-width: 1200px) {
+
+			&:nth-of-type(1){
+				order: 1;
+			}
+			&:nth-of-type(2){
+				order: 2;
+			}
+		}
+	}
+}

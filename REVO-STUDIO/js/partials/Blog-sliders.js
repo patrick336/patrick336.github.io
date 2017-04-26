@@ -135,7 +135,7 @@ $(function() {
 			alt: imgAlt,
 			indexImage: pos
 		});
-		//Obraz pojawi sie natychmiast jeśli go wstawimy,bez efektu.
+		//Obraz pojawi sie natychmiast,bez efektu.
 		newImage.hide();
 		// Dodajemy nowy obraz do modelu DOM
 		$('.blog-sliders').eq(nrSlider).prepend(newImage);
