@@ -13,6 +13,7 @@
     "cssnano": "^3.10.0",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-cssmin": "^2.1.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-postcss": "^0.8.0",
     "pixrem": "^3.0.2"
   },

@@ -25,7 +25,6 @@ $(document).ready(function(){
     var slideUpClass = /(?:^|\s)slideUp(?!\S)/g;
     var slideDownClass = /(?:^|\s)slideDown(?!\S)/g;
 
-
     if(hasClasss(slideDown,"slideUp")) {
       slideDown.className = slideDown.className.replace(slideUpClass,'');
       slideDown.className +=' slideDown';

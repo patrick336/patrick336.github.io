@@ -23,6 +23,16 @@ module.exports = function (grunt) {
         },
       }
     },
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,jpeg,gif}'],
+          dest: 'images/compressed/'
+        }]
+      }
+    },
     browserSync: {
       default_options: {
         bsFiles: {
@@ -76,7 +86,7 @@ module.exports = function (grunt) {
 
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
-  //grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-postcss');
