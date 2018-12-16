@@ -1,0 +1,184 @@
+//
+// Color system
+//
+
+$primary:          #ec2a32;
+$secondary:        #efefef;
+
+$gray-lightest:    #f5f5f5;
+$gray-lighter:     #616161;
+$gray-light:       #424448;
+$gray:             #333;
+$gray-dark:        #3d3e41;
+$gray-darken:      #222;
+$white:            #fff;
+
+//
+// Brand color system
+//
+
+$brand-violet: #9BA5B5;
+$brand-pink: #E8C3B9;
+$brand-cyan: #224A54;
+$brand-black: #1A1A1A;
+$brand-yellow: #F3E9C6;
+$brand-red: #C1605C;
+$brand-brown: #45383C;
+$brand-sky: #98BEC8;
+
+//
+// Body
+//
+
+$body-bg:       #fff;
+$body-color:    #222;
+
+//
+// Links
+//
+
+$link-color:  $gray !default;
+$link-hover-color: $primary !default;
+$link-hover-decoration: none !default;
+
+//
+// Headings
+//
+
+$headings-margin-bottom: 15px;
+$font-family-sans-serif: 'Catamaran', -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$headings-color: $gray-darken !default;
+$headings-font-weight: 900 !default;
+
+$h1-font-size:  44px;
+$h2-font-size:  44px;
+
+//
+// Borders
+//
+
+$border-color:  #eceef1;
+
+$border-radius:    30px;
+$border-radius-lg: 20px;
+$border-radius-sm: 10px;
+
+//
+// Dropdowns
+//
+
+$dropdown-padding-y:                0;
+$dropdown-bg:                       $white;
+$dropdown-border-radius:            0;
+$dropdown-border-color:             $border-color;
+$dropdown-divider-bg:               $border-color;
+
+$dropdown-link-color:               $gray;
+$dropdown-link-hover-color:         $white;
+$dropdown-link-hover-bg:            $primary;
+
+$dropdown-item-padding-y:           1rem;
+$dropdown-item-padding-x:           1.5rem;
+
+//
+// Cards
+//
+
+$card-border-radius:       0;
+$card-inner-border-radius: 0;
+$card-border-color:        $border-color;
+$card-cap-bg:              #ffffff;
+
+//
+// Breadcrumbs
+//
+
+$breadcrumb-padding-y:              1.85rem;
+$breadcrumb-padding-x:              0;
+$breadcrumb-item-padding:           .75rem;
+$breadcrumb-margin-bottom:          0;
+
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          $primary;
+$breadcrumb-active-color:           $primary;
+// $breadcrumb-divider:                '\f054';
+
+$breadcrumb-border-radius:          $border-radius !default;
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:         1rem;
+$input-btn-padding-x:         3.2rem;
+
+//
+// Breakpoints
+//
+$grid-breakpoints: (
+    xss: 0,
+    xs: 480,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+//
+// Container
+//
+
+$container-max-widths: (
+    xs: 450px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+) !default;
+//
+// Spacing
+//
+
+$spacer: 5px !default;
+$spacers: () !default;
+$spacers: map-merge((
+    0: 0,
+    5: ($spacer * 1),
+    10: ($spacer * 2),
+    15: ($spacer * 3),
+    20: ($spacer * 4),
+    25: ($spacer * 5),
+    30: ($spacer * 6),
+    35: ($spacer * 7),
+    40: ($spacer * 8),
+    45: ($spacer * 9),
+    50: ($spacer * 10),
+    55: ($spacer * 11),
+    60: ($spacer * 12),
+    65: ($spacer * 13),
+    70: ($spacer * 14),
+    75: ($spacer * 15),
+    80: ($spacer * 16),
+    85: ($spacer * 17),
+    90: ($spacer * 18),
+    95: ($spacer * 19),
+    100: ($spacer * 20),
+    105: ($spacer * 21),
+    110: ($spacer * 22),
+    115: ($spacer * 23),
+    120: ($spacer * 24)
+), $spacers);
+
+//
+// This variable affects the `.h-*` and `.w-*` classes.
+//
+
+$sizes: () !default;
+$sizes: map-merge((
+    20: 20%,
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto
+), $sizes);

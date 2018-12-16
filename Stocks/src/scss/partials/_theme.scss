@@ -1,0 +1,33 @@
+$my-theme: (
+    'primary':      $primary,
+    'secondary':    $secondary,
+    'white':        $white,
+    'black':        $black,
+    'gray-lightest': $gray-lightest,
+    'gray-lighter': $gray-lighter,
+    'gray-light':   $gray-light,
+    'gray':         $gray,
+    'gray-dark':    $gray-dark,
+    'gray-darken':  $gray-darken,
+    'brand-violet': $brand-violet,
+    'brand-pink':   $brand-pink,
+    'brand-cyan':   $brand-cyan,
+    'brand-black':  $brand-black,
+    'brand-yellow': $brand-yellow,
+    'brand-red':    $brand-red,
+    'brand-brown':  $brand-brown,
+    'brand-sky':    $brand-sky
+);
+
+@each $key, $value in $my-theme {
+    .bg-#{$key}  {
+        background-color: $value;
+    }
+    .color-#{$key} {
+        color: $value;
+
+        p, a {
+            color: $value;
+        }
+    }
+}
