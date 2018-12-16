@@ -2,18 +2,31 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "Gruntfile.js",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
-    "test": "test portfolio"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patrick336/patrick336.github.io.git"
-  },
-  "author": "Kalinowski Patryk",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/patrick336/patrick336.github.io/issues"
-  },
-  "homepage": "https://github.com/patrick336/patrick336.github.io#readme"
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-shell": "^0.6.5",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0"
+  }
 }
