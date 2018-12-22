@@ -134,7 +134,8 @@ gulp.task('watch-images', function () {
 gulp.task('browser-sync', function() {
     browserSync.init({
         files: ['./*.html', './css/main.min.css', './src/scss/main.scss', './src/scss/partials/*.scss', './src/js/*.js'],
-        proxy: config.proxy
+        //proxy: config.proxy
+		server: "./"
     });
 });
 
